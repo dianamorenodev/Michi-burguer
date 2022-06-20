@@ -1,9 +1,14 @@
-body{
-  background-color: pink;
-  font-family: 'Courier New', Courier, monospace;
-  text-align: center;
+nav{
+  border-bottom: 1px #FF3E3B solid;
 }
-img{
-  height: 20rem;
-  width: 40rem;
+#amvurgueso{
+  margin-top: 3rem;
+}
+#cards{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+footer{
+  background: #FFC447;
+  color: #F8F6F5;
 }

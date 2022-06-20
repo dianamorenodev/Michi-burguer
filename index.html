@@ -4,24 +4,85 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="style.css"> -->
+  <!-- CSS only -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
   <title>Michi Burguer</title>
 </head>
-<body>
-  <!--Titulo de la pagina-->
-  <h2>Como hacer una hamburguesa</h2>
-  <!--Baner-->
-  <img src="img/michiBurguer.jpg" alt="Gato dentro de una cama con forma de hamburguesa">
-  <!--Como hacer una hamburguesa-->
-  <p>Para hacer una hamburguesa necesitamos</p>
-  <ul>
-    <li>Pan</li>
-    <li>Queso</li>
-    <li>Un michi</li>
-    <li>Hamburguesa</li>
-  </ul>
-  <!--Video de michis-->
-  <p>Mira un video de gatitos</p>
-  <a href="https://www.youtube.com/watch?v=cK-DBcmPoPI&ab_channel=Guest63random">Michi Hamburguesa</a>
+<body class="text-bg-light p-3">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Michi Burguer🍔</a>
+    </nav>
+    <div class="text-center">
+      <img id="amvurgueso" src="img/michiBurguer.jpg" class="rounded" alt="Gato dentro de una cama con forma de hamburguesa" width="350px" height="250">
+      <div class="container" id="cards">
+        <div class="row align-items-center">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <a href="https://www.youtube.com/watch?v=ddOtSexdmiM&ab_channel=Zona24-7"><img src="img/Video.png" class="card-img-top" alt="..."></a>
+              <div class="card-body">
+                <h5 class="card-title">¿De donde viene el meme?</h5>
+                <p class="card-text">En este video podras encontrar los detalles interesantes de su origen</p>
+                <a href="https://www.youtube.com/watch?v=ddOtSexdmiM&ab_channel=Zona24-7"><button type="button" class="btn btn-danger">Mirar</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="img/Michi.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">¿Tu michi puede comerlas?</h5>
+                <p class="card-text">Podras descubrilo...</p>
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  ¡Aqui!
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title">Respuesta: ¡Si!</h5>              
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        ¿Pueden los gatos comer una hamburguesa? ¡Sí, tu gato puede comer hamburguesa! La hamburguesa siempre debe cocinarse, incluso para su gato, para prevenir infecciones por bacterias y / o parásitos que pueden estar en la carne cruda. Ventaja: si su gato tiene diarrea, la hamburguesa simple puede ser una buena opción para una dieta blanda para darle un descanso al tracto gastrointestinal durante uno o dos días.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="img/Yuum.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <footer>
+    <div class="row align-items-end">
+      <div class="col">
+        <span>Michi Burguer🍔</span>
+      </div>
+      <div class="col">
+        Gracias por leer esta pequeña pagina
+      </div>
+      <div class="col">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+        </svg>
+      </div>
+    </div>
+  </footer>
+  </div>
 </body>
 </html>
