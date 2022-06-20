@@ -1,0 +1,2 @@
+# Michi-burguer
+Simple page
