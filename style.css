@@ -1,0 +1,9 @@
+body{
+  background-color: pink;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+img{
+  height: 20rem;
+  width: 40rem;
+}
